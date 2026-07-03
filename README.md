@@ -17,6 +17,7 @@ This project represents one of my very first serious milestones as an engineerin
 
 Since this was developed during my university years, the control logic and architecture might not be 100% perfect, and there is definitely room for optimization. However, every bug encountered and every configuration challenge faced was a massive learning experience. I am sharing this repository openly to document my progress, and I welcome any constructive feedback or suggestions from seasoned automation professionals! 
 **If you have any ideas on how to improve or develop this project further, I would love to hear from you! Let's connect on LinkedIn:** 
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mukhammed-ali-yespembetov-304348285/)
 
 ## Project Description
