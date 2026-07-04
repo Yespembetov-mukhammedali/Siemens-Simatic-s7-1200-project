@@ -34,3 +34,10 @@ Since this was developed during my university years, the control logic and archi
 **If you have any ideas on how to improve or develop this project further, I would love to hear from you! Let's connect on LinkedIn:** 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/mukhammed-ali-yespembetov-304348285/)
+
+
+
+# Video
+
+
+
