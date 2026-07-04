@@ -1,6 +1,6 @@
-# 🔧 PLC Control & Software Architecture
+# ⚙️ PLC Control & Software Architecture
 
-The control software for the system is developed within the **Siemens TIA Portal** environment. The program utilizes a hybrid architecture, combining **Ladder Logic (LAD)** for sequential control/interlocking and **Structured Control Language (SCL)** for data handling and numerical calculations.
+The control architecture for the Automated Final Module Assembly & Packaging System is engineered within the Siemens TIA Portal V19 environment using a hybrid structure of Ladder Logic (LAD) for sequential interlocking and Structured Control Language (SCL) for data handling. The modular software design incorporates structured memory allocation and strict naming conventions across discrete networks to manage conveyor indexing, robotic sequencing (Start/Busy/Done handshakes), and digital signal conditioning for presence and position sensors. Operating logic supports both Automatic continuous cycles and Manual axis jogging modes, integrated alongside software watchdogs, timers, and fail-safe routines such as Emergency Stop tracking to ensure rigorous boundary limits and operational safety, all of which were fully validated via real-time simulation prior to deployment.
 
 ---
 
@@ -10,7 +10,7 @@ Before detailing the code structure, the physical layout of the automated assemb
 
 ### 2.1 Technological Scheme Development
 
-![Technological Scheme](./images/ЖОҒАРЫДАҒЫ_СУРЕТТІҢ_АТЫ.png)
+![Technological Scheme](./images/diagram.jpg)
 
 The layout features a dual-stream configuration (`LINE 1 / Stream A` and `LINE 2 / Stream B`) executing simultaneous transport, machining, and material handling tasks.
 
@@ -37,7 +37,7 @@ The software memory and execution routines are managed through the following blo
 
 ---
 
-## ⚙️ 3. Execution Modes
+##  3. Execution Modes
 
 The control logic supports two primary operating states selected via the operator panel:
 1. **Automatic Mode:** Full sequential execution governed by the PLC state machine, utilizing sensor flags for automated step transitions.
