@@ -4,7 +4,7 @@ The control architecture for the Automated Final Module Assembly & Packaging Sys
 
 ---
 
-## 📐 1. Process Overview & Hardware Layout
+## 1. Process Overview & Hardware Layout
 
 Before detailing the code structure, the physical layout of the automated assembly and packaging lines is organized into two parallel operating streams, synchronized by a central control logic.
 
@@ -18,7 +18,7 @@ The layout features a dual-stream configuration (`LINE 1 / Stream A` and `LINE 2
 
 The following tables define the complete I/O variable allocation and internal memory mapping compiled within the Siemens TIA Portal tag table.
 
-### 📥 1. Digital Inputs (%I)
+### 1. Digital Inputs (%I)
 These memory registers process raw signals arriving from physical switches, push buttons, limits, and field sensors.
 
 | Tag Name | Data Type | Address | Description / Function |
@@ -41,7 +41,7 @@ These memory registers process raw signals arriving from physical switches, push
 | **E-Stop** | Bool | `%I3.1` | Hardwired safety interlock circuit feedback. |
 | **Machining_Center_1_Progress** | Real | `%ID30` | Analog/numerical execution track (0.0 - 100.0%) from the unit. |
 
-### 📤 2. Digital Outputs (%Q)
+### 2. Digital Outputs (%Q)
 These hardware addresses drive the physical actuators, solenoid valves, and indicator states across the line.
 
 | Tag Name | Data Type | Address | Connected Actuator / Indicator |
@@ -64,7 +64,7 @@ These hardware addresses drive the physical actuators, solenoid valves, and indi
 | **Fault** | Bool | `%Q3.2` | Visual alarm light panel or audio indicator activation. |
 | **Tag_2** | Bool | `%Q4.0` | Auxiliary system execution output bit. |
 
-### 🧠 3. Internal System Memory (%M / %MW)
+### 3. Internal System Memory (%M / %MW)
 Internal software registers mapping states, inter-block handshakes, and numerical operations.
 
 | Tag Name | Data Type | Address | Internal Logical Allocation |
