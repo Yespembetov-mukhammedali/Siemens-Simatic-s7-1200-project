@@ -5,11 +5,9 @@ This is my final project for the 'Automated Control Systems Based on Simatic S7-
 # 📝Project Description & Goal
 ## 💡 Why This Project? 
 
-Let’s be honest: doing the same repetitive, theoretical university assignments can get a bit uninspiring after a while. I wanted to break away from the classic textbook exercises and build something that felt **real**. 
+University assignments are great for learning theory, but they rarely show how real factories operate. I wanted to build an automation system that handles actual industrial challenges rather than just passing a basic classroom test. 
 
-I asked myself: *“Why not bridge the gap between academia and actual industry by automating and simulating a complex, real-world production line?”* 
-
-That thought led me to this project. I have always been fascinated by innovative industrial processes, and I wanted to see how a top-tier industrial controller like the Siemens SIMATIC S7-1200 handles a dynamic, fast-paced environment. Automating a final assembly and packaging line from scratch allowed me to dive deep into complex algorithms, timing logic, and system synchronization—exactly the kind of challenges that turn an engineering student into a real automation professional.
+I chose to automate a complete assembly and packaging line using a Siemens S7-1200 PLC because it forced me to solve real-world engineering tasks. Programming this sequence required structuring complex state machines, synchronizing multiple conveyors, and managing tight timing interlocks between robotic arms and sensors. It was the best way to test my logic design and see how industrial hardware handles a fast-paced production cycle.
 
 ## Project Description
 
