@@ -8,7 +8,7 @@ The control architecture for the Automated Final Module Assembly & Packaging Sys
 
 Before detailing the code structure, the physical layout of the automated assembly and packaging lines is organized into two parallel operating streams, synchronized by a central control logic.
 
-![Technological Scheme](./images/diagram.jpg)
+![Technological Scheme](./images/P&ID_diagram.jpg)
 
 The layout features a dual-stream configuration (`LINE 1 / Stream A` and `LINE 2 / Stream B`) executing simultaneous transport, machining, and material handling tasks.
 
