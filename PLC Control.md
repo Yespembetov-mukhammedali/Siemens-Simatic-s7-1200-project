@@ -4,14 +4,17 @@ The control architecture for the Automated Final Module Assembly & Packaging Sys
 
 ---
 
-## 1. Process Overview & Hardware Layout
+## Technological Scheme & Instrumentation (P&ID Layout)
 
-Before detailing the code structure, the physical layout of the automated assembly and packaging lines is organized into two parallel operating streams, synchronized by a central control logic.
+The diagram illustrates the physical and logical integration of the field instrumentation with the industrial control layer. The system architecture coordinates material flow across multiple processing vectors via a centralized control framework:
 
+* **Control Interface Topology:** The automation backbone relies on a Modicon controller framework acting as the main processor. Field data acquisition and command signaling are routed through an industrial Ethernet network interface. The I/O matrix maps dynamic process variables divided into Digital Inputs (DI) / Digital Outputs (DO) for discrete sequencing, and Analog Inputs (AI) / Analog Outputs (AO) for continuous loops such as tracking machining execution profiles.
+* **Actuator and Sensor Field Layer:** * **Material Transport:** The process contains independent `Conveyor Belts` driven by industrial motors (`M`). Component transitions and queuing are regulated by localized tracking groups, specifically presence switches (`S1`, `S2`, `S3`) and dedicated alignment loops.
+ 
 ![Technological Scheme](./images/P&ID_diagram.jpg)
 
-The layout features a dual-stream configuration (`LINE 1 / Stream A` and `LINE 2 / Stream B`) executing simultaneous transport, machining, and material handling tasks.
-
+ * **Handling & Manipulation Blocks:** Three robotic handling units (`ROBOT ZN-101`) equipped with pneumatic or electric end-effectors (`GRIPPER ZZC-101`) manage cross-conveyor pick-and-place loops. These units execute trajectories based on interlocked feedback from position tracking sensors (`ZE`).
+  * **Processing Stations:** Integrated `Machining Centers` receive synchronized material blocks from the conveyor lines, executing local processing parameters before releasing components back into the active transport loop.
 ---
 
 ## 🔢 PLC Input/Output (I/O) Mapping & Tag Assignment
