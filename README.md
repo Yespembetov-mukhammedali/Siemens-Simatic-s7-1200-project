@@ -41,7 +41,7 @@ Since this was developed during my university years, the control logic and archi
 
 Click the preview image below to watch the full Factory I/O and HMI automation cycle on YouTube:
 
-[![Watch the video](./images/video_preview.png)](СІЗДІҢ_YOUTUBE_СІЛТЕМЕҢІЗ)
+[![Watch the video](./images/Video_preview.png)](https://youtu.be/D_lYLUrZLnc?si=aOn8OAYPRYoGVTf5)
 
 
 
